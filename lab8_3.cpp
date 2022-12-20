@@ -1,8 +1,24 @@
 #include<iostream>
 using namespace std;
 
-char before(char x){
-	//Write your function definition here
+char before(char x)
+{
+	int num = x ;
+	char T = num ;
+	if(num <= 91 && num > 48)
+	{
+		 num--;
+		 if(num < 65)
+		 {
+			num += 26 ;
+		 }
+	
+	}else 
+		{
+			num = 48 ;
+		}
+		T = num ;
+		return T ;
 }
 
 int main(){
